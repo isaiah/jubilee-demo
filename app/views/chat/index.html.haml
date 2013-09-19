@@ -1,0 +1,12 @@
+%p Subscribe
+%p channel
+= text_field_tag :channel, nil,  id: "channel"
+= button_tag :connect, id: "connect"
+
+%p Publish
+
+%p
+= text_area_tag :text, nil, id: "text"
+= button_tag :sent, id: "send"
+
+#updates Updates
