@@ -1,6 +1,8 @@
 Jrails::Application.routes.draw do
   resources :users do
-    member :msg
+    collection do
+      get :msg
+    end
   end
 
   root "chat#index"
