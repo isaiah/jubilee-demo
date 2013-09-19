@@ -1,5 +1,8 @@
 Jrails::Application.routes.draw do
-  resources :users
+  resources :users do
+    member :msg
+  end
+
   root "chat#index"
 
   # The priority is based upon order of creation: first created -> highest priority.

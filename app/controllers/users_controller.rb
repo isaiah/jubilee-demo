@@ -7,6 +7,12 @@ class UsersController < ApplicationController
     @users = User.all
   end
 
+  def msg
+    msg = params[:msg]
+    user = params[:user]
+    Vertx::EventBus.send(user, msg)
+  end
+
   # GET /users/1
   # GET /users/1.json
   def show
