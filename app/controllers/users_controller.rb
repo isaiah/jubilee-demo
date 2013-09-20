@@ -12,6 +12,7 @@ class UsersController < ApplicationController
     msg = params[:msg]
     user = params[:user]
     Vertx::EventBus.send(user, msg)
+    render nothing: true
   end
 
   # GET /users/1
