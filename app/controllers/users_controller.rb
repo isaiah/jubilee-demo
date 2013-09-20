@@ -11,7 +11,10 @@ class UsersController < ApplicationController
   def msg
     msg = params[:msg]
     user = params[:user]
-    Vertx::EventBus.send(user, msg)
+    hash = Vertx::SharedData.get_hash("test")
+    pre = hash["test"]
+    hash["test"] = msg
+    Vertx::EventBus.send(user, "msg:#{msg}, pre:#{pre}")
     render nothing: true
   end
 
