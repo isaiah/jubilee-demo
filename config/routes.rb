@@ -5,6 +5,8 @@ Jrails::Application.routes.draw do
     end
   end
 
+  get "/search" => "search#index"
+
   root "chat#index"
 
   # The priority is based upon order of creation: first created -> highest priority.

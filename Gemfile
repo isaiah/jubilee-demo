@@ -33,7 +33,7 @@ platforms :ruby do
 end
 
 platforms :jruby do
-  gem 'jubilee', '~> 0.6.0'
+  gem 'jubilee', '1.0.0.beta1'
   gem 'puma'
   gem 'activerecord-jdbcsqlite3-adapter'
 end

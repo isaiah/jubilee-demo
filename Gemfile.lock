@@ -51,7 +51,6 @@ GEM
     coffee-script-source (1.6.3)
     erubis (2.7.0)
     execjs (2.0.1)
-    ffi (1.9.0)
     ffi (1.9.0-java)
     haml (4.0.3)
       tilt
@@ -71,7 +70,7 @@ GEM
       thor (>= 0.14, < 2.0)
     json (1.8.0)
     json (1.8.0-java)
-    jubilee (0.6.0)
+    jubilee (1.0.0.beta1)
       rack (>= 1.4.1)
       spoon (~> 0.0.4)
     kgio (2.8.1)
@@ -84,8 +83,6 @@ GEM
     minitest (4.7.5)
     multi_json (1.8.0)
     polyglot (0.3.3)
-    puma (2.6.0)
-      rack (>= 1.1, < 2.0)
     puma (2.6.0-java)
       rack (>= 1.1, < 2.0)
     rack (1.5.2)
@@ -164,7 +161,7 @@ DEPENDENCIES
   haml-rails
   jbuilder (~> 1.2)
   jquery-rails
-  jubilee (~> 0.6.0)
+  jubilee (= 1.0.0.beta1)
   mini_magick
   puma
   rack
